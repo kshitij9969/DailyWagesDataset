@@ -5,17 +5,17 @@ import tabula
 
 import pandas as pd
 
-file = "AgriWages2015-16.pdf"
+file = "AgriWages2017-18.pdf"
 
 # df = tabula.read_pdf(file, pages=[34], multiple_tables=True)
 
 import camelot
 
-year = [15, 16]
+year = [17, 18]
 
 df_final = pd.DataFrame(columns=['Centre', 'Gender', 'Labour Category', 'Labour Type', f'July-{year[0]}', f'August-{year[0]}', f'September-{year[0]}', f'October-{year[0]}', f'November-{year[0]}', f'December-{year[0]}', f'January-{year[1]}', f'February-{year[1]}', f'March-{year[1]}', f'April-{year[1]}', f'May-{year[1]}', f'June-{year[1]}', 'Annual Average', 'State', 'District'])
 
-for i in range(17, 221):
+for i in range(33, 326):
        print(f"Processing page number: {i}")
        pages = str(i)
 
